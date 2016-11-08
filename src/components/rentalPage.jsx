@@ -10,7 +10,7 @@ import AutoComplete from 'material-ui/AutoComplete';
 import MenuItem from 'material-ui/MenuItem';
 import MyTheme from '../theme/theme.js';
 import { getDistance } from '../services/distanceServices';
-import RentalBanner from './rentalBanner.jsx';
+import Banner from './banner.jsx';
 import FooterLoggedIn from './footer-loggedIn.jsx';
 
 class RentalPage extends React.Component {
@@ -109,7 +109,7 @@ class RentalPage extends React.Component {
     return (
       <div>
         <NavLoggedIn auth={this.props.auth} toggleDrawer={this.props.toggleDrawer}/>
-        <RentalBanner display={'Dog Rental'} />
+        <Banner display={'Dog Rental'} profileType = "rental"/>
         <div style={{marginBottom: 20}}>
 
           <MuiThemeProvider muiTheme={getMuiTheme(MyTheme)}>

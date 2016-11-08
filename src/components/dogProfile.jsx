@@ -58,7 +58,7 @@ class DogProfile extends React.Component {
     return (
       <div>
         <NavLoggedIn auth={this.props.auth} toggleDrawer={this.props.toggleDrawer}/>
-        <Banner display="Your Profile"/>
+        <Banner display={this.state.user.dogname} profileType= "DogProfile"/>
         <div className="container" style={{marginBottom: 20}}>
 
 
